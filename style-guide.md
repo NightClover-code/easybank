@@ -24,5 +24,5 @@ $off-white: #FBFCFF;
 
 ### Fonts
 
-- Family: [Raleway](https://fonts.google.com/specimen/CabiRaleway)
+- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
 - Weights: medium, regular, semi-bold

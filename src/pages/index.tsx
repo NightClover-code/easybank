@@ -1,10 +1,12 @@
-import React from "react"
+import Header from "../components/Header"
 import "../styles/default.scss"
 
 const HomePage = () => {
   return (
     <div className="app__container">
-      <div className="wrapper">hi world!</div>
+      <div className="wrapper">
+        <Header />
+      </div>
     </div>
   )
 }

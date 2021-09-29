@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;1,400&display=swap");
+@import "./global";
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +11,8 @@
   min-height: 100vh;
   overflow: hidden;
   font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
   .wrapper {
     min-width: 250px;
     max-width: 2000px;
