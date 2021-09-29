@@ -1,13 +1,12 @@
-import Header from "../components/Header"
+//importing components & styles
+import MainLayout from "../layouts/MainLayout"
 import "../styles/default.scss"
 
 const HomePage = () => {
   return (
-    <div className="app__container">
-      <div className="wrapper">
-        <Header />
-      </div>
-    </div>
+    <MainLayout>
+      <div className="wrapper"></div>
+    </MainLayout>
   )
 }
 

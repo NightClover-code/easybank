@@ -1,5 +1,5 @@
 const NavBar = () => {
-  return <nav>smtg cool</nav>
+  return <nav>qc</nav>
 }
 
 export default NavBar
