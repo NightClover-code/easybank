@@ -1,8 +1,12 @@
 import React from "react"
-import Test from "../components/test"
+import "../styles/default.scss"
 
 const HomePage = () => {
-  return <Test />
+  return (
+    <div className="app__container">
+      <div className="wrapper">hi world!</div>
+    </div>
+  )
 }
 
 export default HomePage
