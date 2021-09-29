@@ -1,0 +1,43 @@
+nav {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  justify-content: space-between;
+  .logo__container {
+    cursor: pointer;
+  }
+  .nav__list {
+    display: flex;
+    align-items: center;
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        padding: 0 20px;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+      .resources {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          width: 15px;
+          path {
+            transition: all 0.2s ease-in-out;
+          }
+        }
+        &:hover svg path {
+          opacity: 0.7;
+        }
+      }
+    }
+    button {
+      padding: 17px 37px;
+      margin-left: 15px;
+    }
+  }
+}

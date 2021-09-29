@@ -3,3 +3,20 @@
   overflow: hidden;
   margin: auto;
 }
+
+.primary__button {
+  color: white;
+  background-color: $red;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: inherit;
+  box-shadow: 0px 10px 30px hsla(345, 100%, 59%, 0.375);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    opacity: 0.7;
+  }
+}
