@@ -1,0 +1,19 @@
+.hero__section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .text__content {
+    margin-bottom: 120px;
+    h1 {
+      max-width: 450px;
+      font-size: 55px;
+      span {
+        color: $red;
+      }
+    }
+    p {
+      margin-top: 30px;
+      max-width: 480px;
+    }
+  }
+}

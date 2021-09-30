@@ -1,11 +1,14 @@
 //importing components & styles
-import MainLayout from "../layouts/MainLayout"
 import "../styles/default.scss"
+import Hero from "../components/Hero"
+import MainLayout from "../layouts/MainLayout"
 
 const HomePage = () => {
   return (
     <MainLayout>
-      <div className="wrapper"></div>
+      <div className="wrapper">
+        <Hero />
+      </div>
     </MainLayout>
   )
 }
