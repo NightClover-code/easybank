@@ -1,9 +1,11 @@
 .hero__section .container {
+  overflow: visible;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 30px;
   .text__content {
-    margin-bottom: 80px;
+    margin: 80px 100px 0 0;
     h1 {
       max-width: 450px;
       font-size: 55px;
@@ -42,10 +44,9 @@
     }
   }
   .illustration__container {
-    // position: relative;
-    // .request__mockup,
-    // .portfolio__mockup {
-    //   position: absolute;
-    // }
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
