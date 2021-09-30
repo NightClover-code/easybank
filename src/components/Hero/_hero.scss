@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   .text__content {
-    margin-bottom: 120px;
+    margin-bottom: 80px;
     h1 {
       max-width: 450px;
       font-size: 55px;
@@ -15,5 +15,37 @@
       margin-top: 30px;
       max-width: 480px;
     }
+    form {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+      input {
+        width: 340px;
+        height: 55px;
+        outline: none;
+        padding: 0 20px;
+        font-family: inherit;
+        font-size: 18px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        &::placeholder {
+          opacity: 0.5;
+        }
+      }
+      button {
+        border-radius: 10px;
+        padding: 0 50px;
+        height: 55px;
+        margin-left: 10px;
+        position: relative;
+      }
+    }
+  }
+  .illustration__container {
+    // position: relative;
+    // .request__mockup,
+    // .portfolio__mockup {
+    //   position: absolute;
+    // }
   }
 }

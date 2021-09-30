@@ -1,4 +1,4 @@
-export const Logo = () => (
+export const LogoIcon = () => (
   <svg
     width="142"
     height="27"
@@ -37,7 +37,7 @@ export const Logo = () => (
   </svg>
 )
 
-export const ChevronDown = () => (
+export const ChevronDownIcon = () => (
   <svg
     width="18"
     height="18"
@@ -52,4 +52,17 @@ export const ChevronDown = () => (
   </svg>
 )
 
-export * from "./Mockups"
+export const ArrowUpIcon = () => (
+  <svg
+    width="46"
+    height="46"
+    viewBox="0 0 46 46"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M17.1287 29.9053L27.6361 19.3979L27.6361 28.5789C27.6361 29.3127 28.2382 29.9147 28.9719 29.9147C29.7056 29.9147 30.2983 29.3221 30.2983 28.5883L30.2983 16.1901C30.2986 15.8382 30.159 15.5006 29.9102 15.2518C29.6614 15.003 29.3238 14.8634 28.9719 14.8638L16.5737 14.845C15.84 14.845 15.2473 15.4376 15.2473 16.1713C15.2473 16.9051 15.84 17.4977 16.5737 17.4977L25.7548 17.5165L15.2473 28.0239C14.7299 28.5413 14.7299 29.3879 15.2473 29.9053C15.7647 30.4227 16.6113 30.4227 17.1287 29.9053Z"
+      fill="white"
+    />
+  </svg>
+)

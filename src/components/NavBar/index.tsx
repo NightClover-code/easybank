@@ -1,12 +1,12 @@
 import { Link } from "gatsby"
-import { ChevronDown, Logo } from "../Icons"
+import { ChevronDownIcon, LogoIcon } from "../Icons"
 
 const NavBar = () => {
   return (
     <nav>
       <div className="logo__container">
         <Link to="/">
-          <Logo />
+          <LogoIcon />
         </Link>
       </div>
       <div className="nav__list">
@@ -14,7 +14,7 @@ const NavBar = () => {
           <li>Prices</li>
           <li>Learn</li>
           <li className="resources">
-            Resources <ChevronDown />
+            Resources <ChevronDownIcon />
           </li>
           <li>Blog</li>
           <li>Sign In</li>

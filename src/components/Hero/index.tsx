@@ -1,4 +1,4 @@
-import { AppMockup } from "../Icons"
+import { ArrowUpIcon } from "../Icons"
 
 const Hero = () => {
   return (
@@ -15,11 +15,13 @@ const Hero = () => {
           </p>
           <form>
             <input type="email" placeholder="Email address" />
-            <button className="primary__button">qsc</button>
+            <button className="primary__button">
+              <ArrowUpIcon />
+            </button>
           </form>
         </div>
         <div className="illustration__container">
-          <AppMockup />
+          <img src="../../images/app.jpg" alt="" />
         </div>
       </div>
     </section>
