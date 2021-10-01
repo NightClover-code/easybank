@@ -1,8 +1,8 @@
-import { FeatureInterface } from "../../interfaces"
-import Card from "./Card"
+import { FeatureInterface } from "../../interfaces";
+import Card from "./Card";
 
 interface FeaturesProps {
-  features: FeatureInterface[]
+  features: FeatureInterface[];
 }
 
 const Features: React.FC<FeaturesProps> = ({ features }) => {
@@ -20,12 +20,12 @@ const Features: React.FC<FeaturesProps> = ({ features }) => {
         </div>
         <div className="features__grid">
           {features.map((feature, i) => {
-            return <Card feature={feature} key={i} />
+            return <Card feature={feature} key={i} />;
           })}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Features
+export default Features;

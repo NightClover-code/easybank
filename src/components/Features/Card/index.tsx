@@ -1,7 +1,7 @@
-import { FeatureInterface } from "../../../interfaces"
+import { FeatureInterface } from "../../../interfaces";
 
 export interface CardProps {
-  feature: FeatureInterface
+  feature: FeatureInterface;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -15,7 +15,7 @@ const Card: React.FC<CardProps> = ({
       <h2>{title}</h2>
       <p>{description}</p>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

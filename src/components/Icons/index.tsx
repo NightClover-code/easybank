@@ -35,7 +35,7 @@ export const LogoIcon = () => (
       fill="#FF2E63"
     />
   </svg>
-)
+);
 
 export const ChevronDownIcon = () => (
   <svg
@@ -50,7 +50,7 @@ export const ChevronDownIcon = () => (
       fill="#22211F"
     />
   </svg>
-)
+);
 
 export const ArrowUpIcon = () => (
   <svg
@@ -65,7 +65,7 @@ export const ArrowUpIcon = () => (
       fill="white"
     />
   </svg>
-)
+);
 
 export const BankingIcon = () => (
   <svg
@@ -80,7 +80,7 @@ export const BankingIcon = () => (
       fill="#1DC7AC"
     />
   </svg>
-)
+);
 
 export const BudgetingIcon = () => (
   <svg
@@ -95,7 +95,7 @@ export const BudgetingIcon = () => (
       fill="#FF2E63"
     />
   </svg>
-)
+);
 
 export const OnboardingIcon = () => (
   <svg
@@ -110,4 +110,4 @@ export const OnboardingIcon = () => (
       fill="#1dc7ac"
     />
   </svg>
-)
+);

@@ -1,10 +1,10 @@
 //importing styles & utils
-import "../styles/default.scss"
-import { graphql } from "gatsby"
+import "../styles/default.scss";
+import { featuresQuery } from "../graphql";
 //importing components
-import Hero from "../components/Hero"
-import Features from "../components/Features"
-import MainLayout from "../layouts/MainLayout"
+import Hero from "../components/Hero";
+import Features from "../components/Features";
+import MainLayout from "../layouts/MainLayout";
 
 const HomePage = ({ data }) => {
   const features = data.allContentfulFeature.edges.map(
@@ -13,8 +13,8 @@ const HomePage = ({ data }) => {
       iconURL: icon.file.url,
       description: description.description,
     })
-  )
-
+  );
+  const apple = 2;
   return (
     <MainLayout>
       <div className="wrapper">
@@ -22,27 +22,9 @@ const HomePage = ({ data }) => {
         <Features features={features} />
       </div>
     </MainLayout>
-  )
-}
+  );
+};
 
-export const query = graphql`
-  query FeaturesQuery {
-    allContentfulFeature {
-      edges {
-        node {
-          title
-          description {
-            description
-          }
-          icon {
-            file {
-              url
-            }
-          }
-        }
-      }
-    }
-  }
-`
+export const query = featuresQuery;
 
-export default HomePage
+export default HomePage;

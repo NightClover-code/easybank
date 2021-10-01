@@ -1,4 +1,4 @@
-import { ArrowUpIcon } from "../Icons"
+import { ArrowUpIcon } from "../Icons";
 
 const Hero = () => {
   return (
@@ -25,7 +25,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

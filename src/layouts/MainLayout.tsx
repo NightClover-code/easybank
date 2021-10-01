@@ -1,5 +1,5 @@
 //importing components
-import Header from "../components/Header"
+import Header from "../components/Header";
 // import Footer from '../components/Footer';
 
 //main layout
@@ -10,7 +10,7 @@ const MainLayout: React.FC = ({ children }) => {
       {children}
       {/* <Footer /> */}
     </div>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;

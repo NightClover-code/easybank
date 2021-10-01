@@ -1,5 +1,5 @@
 export interface FeatureInterface {
-  title: string
-  iconURL: string
-  description: string
+  title: string;
+  iconURL: string;
+  description: string;
 }

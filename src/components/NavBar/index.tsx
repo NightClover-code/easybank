@@ -1,5 +1,5 @@
-import { Link } from "gatsby"
-import { ChevronDownIcon, LogoIcon } from "../Icons"
+import { Link } from "gatsby";
+import { ChevronDownIcon, LogoIcon } from "../Icons";
 
 const NavBar = () => {
   return (
@@ -22,7 +22,7 @@ const NavBar = () => {
         <button className="primary__button">Free Trial</button>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
