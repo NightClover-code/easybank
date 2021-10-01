@@ -1,9 +1,8 @@
 import { CSSProperties } from "react"
 
-interface CardProps {
-  image: {
-    imgSource: string
-    alt: string
+export interface CardProps {
+  Icon: {
+    Component: React.FC
     style: CSSProperties
   }
   title: {
@@ -13,11 +12,11 @@ interface CardProps {
   description: string
 }
 
-const Card: React.FC<CardProps> = ({ image, title, description }) => {
+const Card: React.FC<CardProps> = ({ Icon, title, description }) => {
   return (
     <div className="features__card">
-      <div className="img__container" style={image.style}>
-        <img src={image.imgSource} alt={image.alt} />
+      <div className="icon__container" style={Icon.style}>
+        <Icon.Component />
       </div>
       <h2 style={title.style}>{title.content}</h2>
       <p>{description}</p>
