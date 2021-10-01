@@ -2,8 +2,10 @@
 import "../styles/default.scss"
 import Hero from "../components/Hero"
 import MainLayout from "../layouts/MainLayout"
+import { graphql } from "gatsby"
 
-const HomePage = () => {
+const HomePage = ({ data }) => {
+  console.log(data.allContentfulFeature.edges[0].node)
   return (
     <MainLayout>
       <div className="wrapper">
@@ -12,5 +14,25 @@ const HomePage = () => {
     </MainLayout>
   )
 }
+
+export const query = graphql`
+  query FeaturesQuery {
+    allContentfulFeature {
+      edges {
+        node {
+          title
+          description {
+            description
+          }
+          icon {
+            file {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 export default HomePage
