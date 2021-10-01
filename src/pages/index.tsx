@@ -1,15 +1,25 @@
-//importing components & styles
+//importing styles & utils
 import "../styles/default.scss"
-import Hero from "../components/Hero"
-import MainLayout from "../layouts/MainLayout"
 import { graphql } from "gatsby"
+//importing components
+import Hero from "../components/Hero"
+import Features from "../components/Features"
+import MainLayout from "../layouts/MainLayout"
 
 const HomePage = ({ data }) => {
-  console.log(data.allContentfulFeature.edges[0].node)
+  const features = data.allContentfulFeature.edges.map(
+    ({ node: { title, description, icon } }: any) => ({
+      title,
+      iconURL: icon.file.url,
+      description: description.description,
+    })
+  )
+
   return (
     <MainLayout>
       <div className="wrapper">
         <Hero />
+        <Features features={features} />
       </div>
     </MainLayout>
   )

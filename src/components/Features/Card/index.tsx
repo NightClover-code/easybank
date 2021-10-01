@@ -1,24 +1,18 @@
-import { CSSProperties } from "react"
+import { FeatureInterface } from "../../../interfaces"
 
 export interface CardProps {
-  Icon: {
-    Component: React.FC
-    style: CSSProperties
-  }
-  title: {
-    style: CSSProperties
-    content: string
-  }
-  description: string
+  feature: FeatureInterface
 }
 
-const Card: React.FC<CardProps> = ({ Icon, title, description }) => {
+const Card: React.FC<CardProps> = ({
+  feature: { title, description, iconURL },
+}) => {
   return (
     <div className="features__card">
-      <div className="icon__container" style={Icon.style}>
-        <Icon.Component />
+      <div className="icon__container">
+        <img src={iconURL} alt="alicb" />
       </div>
-      <h2 style={title.style}>{title.content}</h2>
+      <h2>{title}</h2>
       <p>{description}</p>
     </div>
   )
