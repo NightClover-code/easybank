@@ -14,7 +14,7 @@ const HomePage = ({ data }) => {
       description: description.description,
     })
   );
-  const apple = 2;
+
   return (
     <MainLayout>
       <div className="wrapper">

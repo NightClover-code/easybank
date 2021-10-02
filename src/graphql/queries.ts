@@ -1,8 +1,8 @@
 //importing gql
-import { graphql } from "gatsby";
+import gql from "graphql-tag";
 
 //queries
-export const featuresQuery = graphql`
+export const featuresQuery = gql`
   query FeaturesQuery {
     allContentfulFeature {
       edges {

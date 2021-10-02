@@ -1,4 +1,5 @@
 import { FeatureInterface } from "../../interfaces";
+import { v4 as uuidv4 } from "uuid";
 import Card from "./Card";
 
 interface FeaturesProps {
@@ -19,8 +20,8 @@ const Features: React.FC<FeaturesProps> = ({ features }) => {
           </p>
         </div>
         <div className="features__grid">
-          {features.map((feature, i) => {
-            return <Card feature={feature} key={i} />;
+          {features.map(feature => {
+            return <Card feature={feature} key={uuidv4()} />;
           })}
         </div>
       </div>
