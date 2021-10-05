@@ -3,12 +3,38 @@ import Card from "./Card";
 //importing types & utils
 import { FeatureInterface } from "../../interfaces";
 import { v4 as uuidv4 } from "uuid";
+import { useStaticQuery } from "gatsby";
+import { graphql } from "gatsby";
 
-interface FeaturesProps {
-  features: FeatureInterface[];
-}
+const Features: React.FC = () => {
+  const data = useStaticQuery(graphql`
+    query AllFeaturesQuery {
+      allContentfulFeature {
+        edges {
+          node {
+            title
+            description {
+              description
+            }
+            icon {
+              file {
+                url
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
 
-const Features: React.FC<FeaturesProps> = ({ features }) => {
+  const features = data.allContentfulFeature.edges.map(
+    ({ node: { title, description, icon } }: any) => ({
+      title,
+      iconURL: icon.file.url,
+      description: description.description,
+    })
+  );
+
   return (
     <section className="features__section">
       <div className="container">
@@ -22,7 +48,7 @@ const Features: React.FC<FeaturesProps> = ({ features }) => {
           </p>
         </div>
         <div className="features__grid">
-          {features.map(feature => {
+          {features.map((feature: FeatureInterface) => {
             return <Card feature={feature} key={uuidv4()} />;
           })}
         </div>
