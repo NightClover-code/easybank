@@ -1,3 +1,4 @@
+//importing components
 import { ArrowUpIcon } from "../Icons";
 
 const Hero = () => {

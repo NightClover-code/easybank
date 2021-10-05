@@ -1,3 +1,4 @@
+//importing components
 import { Link } from "gatsby";
 import { ChevronDownIcon, LogoIcon } from "../Icons";
 

@@ -1,3 +1,4 @@
+//importing types
 import { FeatureInterface } from "../../../interfaces";
 
 export interface CardProps {

@@ -1,3 +1,4 @@
+//icons
 export const LogoIcon = () => (
   <svg
     width="142"
