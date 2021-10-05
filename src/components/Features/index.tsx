@@ -1,10 +1,9 @@
 //importing components
 import Card from "./Card";
 //importing types & utils
-import { FeatureInterface } from "../../interfaces";
 import { v4 as uuidv4 } from "uuid";
-import { useStaticQuery } from "gatsby";
-import { graphql } from "gatsby";
+import { dataToFeatures } from "../../../utils";
+import { useStaticQuery, graphql } from "gatsby";
 
 const Features: React.FC = () => {
   const data = useStaticQuery(graphql`
@@ -27,13 +26,7 @@ const Features: React.FC = () => {
     }
   `);
 
-  const features = data.allContentfulFeature.edges.map(
-    ({ node: { title, description, icon } }: any) => ({
-      title,
-      iconURL: icon.file.url,
-      description: description.description,
-    })
-  );
+  const features = dataToFeatures(data);
 
   return (
     <section className="features__section">
@@ -48,7 +41,7 @@ const Features: React.FC = () => {
           </p>
         </div>
         <div className="features__grid">
-          {features.map((feature: FeatureInterface) => {
+          {features.map(feature => {
             return <Card feature={feature} key={uuidv4()} />;
           })}
         </div>
