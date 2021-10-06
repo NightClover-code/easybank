@@ -1,0 +1,16 @@
+.features__section .container {
+  margin-top: 100px;
+  .features__head {
+    text-align: center;
+    h1 {
+      span {
+        color: $green;
+      }
+    }
+    p {
+      max-width: 660px;
+      margin: auto;
+      padding: 15px 0;
+    }
+  }
+}
