@@ -1,5 +1,7 @@
 //importing components
 import { ArrowUpIcon } from "../Icons";
+//@ts-ignore
+import appImg from "../../images/app.jpg";
 
 const Hero = () => {
   return (
@@ -22,7 +24,7 @@ const Hero = () => {
           </form>
         </div>
         <div className="illustration__container">
-          <img src="../../images/app.jpg" alt="" />
+          <img src={appImg} alt="app illustration mockup" />
         </div>
       </div>
     </section>

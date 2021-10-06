@@ -8,6 +8,7 @@ export interface CardProps {
 const Card: React.FC<CardProps> = ({
   feature: { title, description, iconURL },
 }) => {
+  //TODO fix alt
   return (
     <div className="features__card">
       <div className="icon__container">
