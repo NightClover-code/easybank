@@ -2,12 +2,12 @@
 import Card from "./Card";
 //importing types & utils
 import { v4 as uuidv4 } from "uuid";
-import { dataToFeatures } from "../../../utils";
+import { dataToFeatures, sortByDate } from "../../../utils";
 import { useStaticQuery, graphql } from "gatsby";
 
 const Features: React.FC = () => {
   const data = useStaticQuery(graphql`
-    query AllFeaturesQuery {
+    query FeaturesQuery {
       allContentfulFeature {
         edges {
           node {
@@ -20,13 +20,14 @@ const Features: React.FC = () => {
                 url
               }
             }
+            createdAt
           }
         }
       }
     }
   `);
 
-  const features = dataToFeatures(data);
+  const features = sortByDate(dataToFeatures(data));
 
   return (
     <section className="features__section">
