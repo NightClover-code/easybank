@@ -1,0 +1,25 @@
+.features__card {
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+  .icon__container {
+    border-radius: 100%;
+    background-color: #ffc1c1;
+    width: 86px;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  h2 {
+    margin-top: 25px;
+  }
+  p {
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+}

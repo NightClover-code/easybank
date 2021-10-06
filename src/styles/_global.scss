@@ -5,6 +5,7 @@
 }
 
 .primary__button {
+  display: block;
   color: white;
   background-color: $red;
   border: none;
@@ -31,7 +32,7 @@ h1 {
 
 p {
   font-size: 18px;
-  line-height: 33px;
+  line-height: 30px;
   color: $off-black;
   font-weight: normal;
 }

@@ -1,16 +1,33 @@
-.features__section .container {
-  margin-top: 100px;
-  .features__head {
-    text-align: center;
-    h1 {
-      span {
-        color: $green;
+.features__section {
+  background-color: $off-white;
+  margin-top: 40px;
+  margin-bottom: 200px;
+  .container {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    .features__head {
+      text-align: center;
+      h1 {
+        span {
+          color: $green;
+        }
+      }
+      p {
+        max-width: 660px;
+        margin: auto;
+        padding: 15px 0;
       }
     }
-    p {
-      max-width: 660px;
+    .features__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 80px;
+      gap: 30px;
+    }
+    button {
       margin: auto;
-      padding: 15px 0;
+      padding: 17px 25px;
+      margin-top: 60px;
     }
   }
 }

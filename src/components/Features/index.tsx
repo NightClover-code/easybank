@@ -45,6 +45,7 @@ const Features: React.FC = () => {
             return <Card feature={feature} key={uuidv4()} />;
           })}
         </div>
+        <button className="primary__button">Become a partner</button>
       </div>
     </section>
   );
