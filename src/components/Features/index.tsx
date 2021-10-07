@@ -1,9 +1,9 @@
 //importing components
-import Card from "./Card";
+import Card from './Card';
 //importing types & utils
-import { v4 as uuidv4 } from "uuid";
-import { dataToFeatures, sortByDate } from "../../../utils";
-import { useStaticQuery, graphql } from "gatsby";
+import { v4 as uuidv4 } from 'uuid';
+import { dataToFeatures, featuresCardStyle, sortByDate } from '../../utils';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const Features: React.FC = () => {
   const data = useStaticQuery(graphql`
@@ -45,8 +45,14 @@ const Features: React.FC = () => {
           </p>
         </div>
         <div className="features__grid">
-          {features.map(feature => {
-            return <Card feature={feature} key={uuidv4()} />;
+          {features.map((feature, i) => {
+            return (
+              <Card
+                feature={feature}
+                styles={featuresCardStyle(i)}
+                key={uuidv4()}
+              />
+            );
           })}
         </div>
         <button className="primary__button">Become a partner</button>

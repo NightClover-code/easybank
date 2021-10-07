@@ -1,4 +1,4 @@
-import { FeatureInterface } from "../src/interfaces";
+import { FeatureInterface } from '../src/interfaces';
 
 export const dataToFeatures = (data: any): FeatureInterface[] => {
   return data.allContentfulFeature.edges.map(
@@ -23,3 +23,7 @@ export const sortByDate = (arr: FeatureInterface[]) => {
     )
     .reverse();
 };
+
+export const isEven = (n: number) => n % 2 === 0;
+
+export * from './styles';
