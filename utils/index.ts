@@ -12,7 +12,10 @@ export const dataToFeatures = (data: any): FeatureInterface[] => {
 };
 
 export const sortByDate = (arr: FeatureInterface[]) => {
-  return arr.sort(
-    (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-  );
+  return arr
+    .sort(
+      (a, b) =>
+        new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+    )
+    .reverse();
 };
