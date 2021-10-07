@@ -1,3 +1,4 @@
+import { CSSProperties } from 'react';
 import { isEven } from '.';
 
 const colors = {
@@ -7,11 +8,20 @@ const colors = {
   offRed: 'var(--off-red)',
 };
 
-export const featuresCardStyle = (i: number) => {
+export const featuresCardStyle = (i: number): CSSProperties => {
   const { red, green, offGreen, offRed } = colors;
 
-  return {
-    color: isEven(i) ? green : red,
-    backgroundColor: isEven(i) ? offGreen : offRed,
+  const greenCard = {
+    color: green,
+    backgroundColor: offGreen,
   };
+
+  const redCard = {
+    color: red,
+    backgroundColor: offRed,
+    marginLeft: '10px',
+    boxShadow: '0px 15px 50px 5px rgba(0, 0, 0, 0.03)',
+  };
+
+  return isEven(i) ? greenCard : redCard;
 };

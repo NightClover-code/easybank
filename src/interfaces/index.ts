@@ -9,8 +9,3 @@ export interface ImageInterface {
   alt: string;
   url: string;
 }
-
-export interface FeatureStylesInterface {
-  color: string;
-  backgroundColor: string;
-}

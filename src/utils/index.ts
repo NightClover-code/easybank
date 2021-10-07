@@ -1,4 +1,4 @@
-import { FeatureInterface } from '../src/interfaces';
+import { FeatureInterface } from '../interfaces';
 
 export const dataToFeatures = (data: any): FeatureInterface[] => {
   return data.allContentfulFeature.edges.map(
