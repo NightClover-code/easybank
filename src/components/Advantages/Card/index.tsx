@@ -8,28 +8,26 @@ interface CardProps {
   order: number;
 }
 
-const Card: React.FC<CardProps> = ({ advantage, order }) => {
-  const {
-    title,
-    description,
-    topic,
-    image: { url, alt },
-  } = advantage;
+const Card: React.FC<CardProps> = ({
+  advantage: { title, description, topic, image },
+  order,
+}) => {
+  const { url, alt } = image;
   const content = { title, description, topic };
 
-  return isEven(order) ? (
-    <div className="advantages__card">
-      <div className="img__container">
-        <img src={url} alt={alt} />
-      </div>
-      <Content {...content} />
-    </div>
-  ) : (
-    <div className="advantages__card">
-      <Content {...content} />
-      <div className="img__container">
-        <img src={url} alt={alt} />
-      </div>
+  const cardBody = [
+    <div className="img__container">
+      <img src={url} alt={alt} />
+    </div>,
+    <Content {...content} />,
+  ];
+
+  return (
+    <div
+      className="advantages__card"
+      style={order === 0 ? { marginRight: 100 } : {}}
+    >
+      {isEven(order) ? cardBody : cardBody.reverse()}
     </div>
   );
 };

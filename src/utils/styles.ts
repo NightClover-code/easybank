@@ -25,3 +25,7 @@ export const featuresCardStyle = (i: number): CSSProperties => {
 
   return isEven(i) ? greenCard : redCard;
 };
+
+export const advatangesCardStyle = (i: number): CSSProperties => ({
+  marginTop: '30px',
+});
