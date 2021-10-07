@@ -1,6 +1,6 @@
 //importing utils
 import { useStaticQuery, graphql } from 'gatsby';
-import { dataToAdvantages } from '../../utils';
+import { advatangesCardStyle, dataToAdvantages } from '../../utils';
 import { v4 as uuidv4 } from 'uuid';
 //importing components
 import Card from './Card';
@@ -37,7 +37,12 @@ const Advantages: React.FC = () => {
     <section className="advantages__section">
       <div className="container">
         {advantages.map((advantage, i) => (
-          <Card advantage={advantage} order={i} key={uuidv4()} />
+          <Card
+            advantage={advantage}
+            order={i}
+            key={uuidv4()}
+            style={advatangesCardStyle(i)}
+          />
         ))}
       </div>
     </section>

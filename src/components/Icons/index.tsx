@@ -1,3 +1,5 @@
+import { CSSProperties } from 'react';
+
 //icons
 export const LogoIcon = () => (
   <svg
@@ -68,7 +70,9 @@ export const ArrowUpIcon = () => (
   </svg>
 );
 
-export const ArrowRightIcon = () => (
+export const ArrowRightIcon: React.FC<{ style?: CSSProperties }> = ({
+  style: { color },
+}) => (
   <svg
     width="16"
     height="8"
@@ -78,7 +82,7 @@ export const ArrowRightIcon = () => (
   >
     <path
       d="M12.1188 3.0035H1.10876C0.558765 3.0035 0.108765 3.4535 0.108765 4.0035C0.108765 4.5535 0.558765 5.0035 1.10876 5.0035H12.1188V6.7935C12.1188 7.2435 12.6588 7.4635 12.9688 7.1435L15.7488 4.3535C15.9388 4.1535 15.9388 3.8435 15.7488 3.6435L12.9688 0.853496C12.6588 0.533496 12.1188 0.763496 12.1188 1.2035V3.0035Z"
-      fill="#1DC7AC"
+      fill={color}
     />
   </svg>
 );

@@ -21,12 +21,21 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    transition: 0.2s all ease-in-out;
     svg {
+      transition: 0.2s all ease-in-out;
       margin-left: 10px;
     }
     p {
       font-size: 16px;
       font-weight: 600;
+    }
+    &:hover {
+      opacity: 0.7;
+      svg {
+        margin-right: 5px;
+        transform: translateX(10px);
+      }
     }
   }
 }

@@ -8,9 +8,9 @@ const colors = {
   offRed: 'var(--off-red)',
 };
 
-export const featuresCardStyle = (i: number): CSSProperties => {
-  const { red, green, offGreen, offRed } = colors;
+const { red, green, offGreen, offRed } = colors;
 
+export const featuresCardStyle = (i: number): CSSProperties => {
   const greenCard = {
     color: green,
     backgroundColor: offGreen,
@@ -26,6 +26,14 @@ export const featuresCardStyle = (i: number): CSSProperties => {
   return isEven(i) ? greenCard : redCard;
 };
 
-export const advatangesCardStyle = (i: number): CSSProperties => ({
-  marginTop: '30px',
-});
+export const advatangesCardStyle = (i: number): CSSProperties => {
+  const greenCard = {
+    color: green,
+  };
+
+  const redCard = {
+    color: red,
+  };
+
+  return isEven(i) ? greenCard : redCard;
+};
