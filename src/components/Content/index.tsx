@@ -10,7 +10,7 @@ const Content: React.FC<ContentProps> = ({ topic, description, title }) => {
   return (
     <div className="content">
       <h4>{topic}</h4>
-      <h1>{title}</h1>
+      <h2>{title}</h2>
       <p>{description}</p>
       <div className="learn__more">
         <p>

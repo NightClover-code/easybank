@@ -1,0 +1,31 @@
+.content {
+  max-width: 440px;
+  h4 {
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 47px;
+    margin-top: 15px;
+  }
+  p {
+    margin-top: 25px;
+    margin-left: 2px;
+  }
+  .learn__more {
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    svg {
+      margin-left: 10px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}

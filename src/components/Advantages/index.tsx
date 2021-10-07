@@ -36,8 +36,8 @@ const Advantages: React.FC = () => {
   return (
     <section className="advantages__section">
       <div className="container">
-        {advantages.map(advantage => (
-          <Card advantage={advantage} key={uuidv4()} />
+        {advantages.map((advantage, i) => (
+          <Card advantage={advantage} order={i} key={uuidv4()} />
         ))}
       </div>
     </section>
