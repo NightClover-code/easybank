@@ -2,10 +2,14 @@ import { FeatureInterface } from "../src/interfaces";
 
 export const dataToFeatures = (data: any): FeatureInterface[] => {
   return data.allContentfulFeature.edges.map(
-    ({ node: { title, description, icon, createdAt } }: any) => ({
+    ({ node: { title, description, image, createdAt } }: any) => ({
       title,
-      iconURL: icon.file.url,
+      iconURL: image.icon.file.url,
       description: description.description,
+      image: {
+        alt: image.alt,
+        url: image.icon.file.url,
+      },
       createdAt,
     })
   );

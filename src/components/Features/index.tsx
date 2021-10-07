@@ -15,12 +15,15 @@ const Features: React.FC = () => {
             description {
               description
             }
-            icon {
-              file {
-                url
+            createdAt
+            image {
+              alt
+              icon {
+                file {
+                  url
+                }
               }
             }
-            createdAt
           }
         }
       }
@@ -28,7 +31,6 @@ const Features: React.FC = () => {
   `);
 
   const features = sortByDate(dataToFeatures(data));
-  console.log(features);
 
   return (
     <section className="features__section">
