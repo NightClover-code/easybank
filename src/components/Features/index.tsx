@@ -2,7 +2,7 @@
 import Card from './Card';
 //importing types & utils
 import { v4 as uuidv4 } from 'uuid';
-import { dataToFeatures, featuresCardStyle, sortByDate } from '../../utils';
+import { dataToFeatures, featuresCardStyle } from '../../utils';
 import { useStaticQuery, graphql } from 'gatsby';
 
 const Features: React.FC = () => {
@@ -30,7 +30,7 @@ const Features: React.FC = () => {
     }
   `);
 
-  const features = sortByDate(dataToFeatures(data));
+  const features = dataToFeatures(data);
 
   return (
     <section className="features__section">

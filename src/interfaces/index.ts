@@ -8,8 +8,8 @@ export interface FeatureInterface {
 export interface AdvantageInterface {
   title: string;
   description: string;
-  createdAt: string;
   topic: string;
+  createdAt: string;
   image: ImageInterface;
 }
 
