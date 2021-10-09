@@ -45,15 +45,13 @@ const Features: React.FC = () => {
           </p>
         </div>
         <div className="features__grid">
-          {features.map((feature, i) => {
-            return (
-              <Card
-                feature={feature}
-                styles={featuresCardStyle(i)}
-                key={uuidv4()}
-              />
-            );
-          })}
+          {features.map((feature, i) => (
+            <Card
+              feature={feature}
+              styles={featuresCardStyle(i)}
+              key={uuidv4()}
+            />
+          ))}
         </div>
         <button className="primary__button">Become a partner</button>
       </div>

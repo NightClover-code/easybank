@@ -13,6 +13,13 @@ export interface AdvantageInterface {
   image: ImageInterface;
 }
 
+export interface TestimonialInterface {
+  name: string;
+  content: string;
+  createdAt: string;
+  image: ImageInterface;
+}
+
 export interface ImageInterface {
   alt: string;
   url: string;
