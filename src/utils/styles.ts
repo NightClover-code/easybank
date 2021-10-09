@@ -26,14 +26,9 @@ export const featuresCardStyle = (i: number): CSSProperties => {
   return isEven(i) ? greenCard : redCard;
 };
 
-export const advatangesCardStyle = (i: number): CSSProperties => {
-  const greenCard = {
-    color: green,
-  };
-
-  const redCard = {
-    color: red,
-  };
-
-  return isEven(i) ? greenCard : redCard;
-};
+export const advatangesCardStyle = (i: number): CSSProperties =>
+  isEven(i)
+    ? {
+        color: green,
+      }
+    : { color: red };

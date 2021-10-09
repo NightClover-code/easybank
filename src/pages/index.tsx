@@ -5,6 +5,7 @@ import Hero from '../components/Hero';
 import Features from '../components/Features';
 import MainLayout from '../layouts/MainLayout';
 import Advantages from '../components/Advantages';
+import Testimonials from '../components/Testimonials';
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
         <Hero />
         <Features />
         <Advantages />
+        <Testimonials />
       </div>
     </MainLayout>
   );

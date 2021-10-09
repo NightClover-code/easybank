@@ -35,7 +35,7 @@ export const dataToAdvantages = (data: any): AdvantageInterface[] => {
   );
 };
 
-export const sortByDate = (arr: any) => {
+export const sortByDate = (arr: any[]) => {
   return arr
     .sort(
       (a, b) =>
