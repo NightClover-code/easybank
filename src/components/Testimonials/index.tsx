@@ -39,8 +39,8 @@ const Testimonials = () => {
         <p>Nothing is more rewarding than hearing from our customers.</p>
       </div>
       <div className="testimonials__grid">
-        {testimonials.map(testimonial => (
-          <Card testimonial={testimonial} key={uuidv4()} />
+        {testimonials.map((testimonial, i) => (
+          <Card testimonial={testimonial} key={uuidv4()} order={i} />
         ))}
       </div>
     </section>

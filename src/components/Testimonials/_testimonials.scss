@@ -3,10 +3,18 @@
   padding-top: 80px;
   text-align: center;
   background-color: $off-white;
+  margin-bottom: 200px;
   h1 span {
     color: $red;
   }
   p {
     padding: 20px 0;
+  }
+  .testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 600px);
+    margin-top: 60px;
+    gap: 20px;
+    transform: translateX(-10%);
   }
 }
