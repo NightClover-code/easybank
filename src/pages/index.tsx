@@ -6,6 +6,7 @@ import Features from '../components/Features';
 import MainLayout from '../layouts/MainLayout';
 import Advantages from '../components/Advantages';
 import Testimonials from '../components/Testimonials';
+import Newsletter from '../components/Newsletter';
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
         <Features />
         <Advantages />
         <Testimonials />
+        <Newsletter />
       </div>
     </MainLayout>
   );
