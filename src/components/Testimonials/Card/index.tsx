@@ -1,5 +1,5 @@
 import { TestimonialInterface } from '../../../interfaces';
-import { StarsIcon } from '../../Icons';
+import { StarsIcon, QuotesIcon } from '../../Icons';
 
 interface CardProps {
   testimonial: TestimonialInterface;
@@ -19,6 +19,7 @@ const Card: React.FC<CardProps> = ({
           : {}
       }
     >
+      <QuotesIcon />
       <div className="avatar__container">
         <img src={image.url} alt={image.alt} />
       </div>

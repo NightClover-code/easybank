@@ -4,6 +4,7 @@
   text-align: center;
   background-color: $off-white;
   margin-bottom: 200px;
+  padding-bottom: 60px;
   h1 span {
     color: $red;
   }
@@ -16,5 +17,16 @@
     margin-top: 60px;
     gap: 20px;
     transform: translateX(-10%);
+  }
+  .toggler__container {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 30px;
+    svg {
+      cursor: pointer;
+    }
   }
 }

@@ -1,10 +1,19 @@
 .testimonials__card {
+  position: relative;
   background-color: #fff;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding: 0 50px 20px;
+  padding-bottom: 20px;
   border-radius: 12px;
+  svg.quotes {
+    position: absolute;
+    left: 85px;
+    top: 100px;
+  }
+  p {
+    max-width: 430px;
+  }
   .avatar__container {
     width: 64px;
     height: 64px;

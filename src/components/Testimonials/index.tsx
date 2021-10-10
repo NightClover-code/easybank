@@ -1,6 +1,7 @@
 import { useStaticQuery, graphql } from 'gatsby';
 import { dataToTestimonials } from '../../utils';
 import { v4 as uuidv4 } from 'uuid';
+import { ChevronLeftIcon, ChevronRightIcon } from '../Icons';
 import Card from './Card';
 
 const Testimonials = () => {
@@ -42,6 +43,10 @@ const Testimonials = () => {
         {testimonials.map((testimonial, i) => (
           <Card testimonial={testimonial} key={uuidv4()} order={i} />
         ))}
+      </div>
+      <div className="toggler__container">
+        <ChevronLeftIcon />
+        <ChevronRightIcon />
       </div>
     </section>
   );
