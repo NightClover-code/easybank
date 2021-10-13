@@ -1,6 +1,8 @@
+//importing types & utils
+import { v4 as uuidv4 } from 'uuid';
 import { useStaticQuery, graphql } from 'gatsby';
 import { dataToTestimonials } from '../../utils';
-import { v4 as uuidv4 } from 'uuid';
+//importing components
 import { ChevronLeftIcon, ChevronRightIcon } from '../Icons';
 import Card from './Card';
 

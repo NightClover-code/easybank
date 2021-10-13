@@ -1,3 +1,4 @@
+//importing components & types
 import { CSSProperties } from 'react';
 import { ArrowRightIcon } from '../Icons';
 

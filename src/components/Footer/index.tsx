@@ -1,3 +1,4 @@
+//importing components
 import { FacebookIcon, LinkedInIcon, LogoIcon, TwitterIcon } from '../Icons';
 import { Link } from 'gatsby';
 

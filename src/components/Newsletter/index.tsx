@@ -1,3 +1,4 @@
+//importing components
 import { ChevronRightIcon, Rectangle } from '../Icons';
 
 const Newsletter = () => {
