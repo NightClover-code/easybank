@@ -188,8 +188,8 @@ export const Rectangle = () => (
 
 export const FacebookIcon = () => (
   <svg
-    width="5"
-    height="10"
+    width="8"
+    height="13"
     viewBox="0 0 5 10"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -203,8 +203,8 @@ export const FacebookIcon = () => (
 
 export const TwitterIcon = () => (
   <svg
-    width="11"
-    height="9"
+    width="13"
+    height="11"
     viewBox="0 0 11 9"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -218,8 +218,8 @@ export const TwitterIcon = () => (
 
 export const LinkedInIcon = () => (
   <svg
-    width="9"
-    height="9"
+    width="11"
+    height="11"
     viewBox="0 0 9 9"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

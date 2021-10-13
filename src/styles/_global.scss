@@ -36,3 +36,10 @@ p {
   color: $off-black;
   font-weight: normal;
 }
+
+.separator {
+  display: block;
+  width: 100%;
+  height: 0px;
+  border: 1px solid rgba(196, 196, 196, 0.2);
+}
