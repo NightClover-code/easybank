@@ -1,6 +1,6 @@
 //importing components
-import Header from "../components/Header";
-// import Footer from '../components/Footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 //main layout
 const MainLayout: React.FC = ({ children }) => {
@@ -8,7 +8,7 @@ const MainLayout: React.FC = ({ children }) => {
     <div className="app__container">
       <Header />
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
