@@ -1,4 +1,4 @@
-import { Rectangle } from '../Icons';
+import { ChevronRightIcon, Rectangle } from '../Icons';
 
 const Newsletter = () => {
   return (
@@ -9,6 +9,19 @@ const Newsletter = () => {
           <div className="rectangle__container">
             <Rectangle />
           </div>
+          <div className="newsletter__head">
+            <h2>Subscribe to our newsletter</h2>
+            <p>
+              Receive weekly emails about online security and the future of
+              digital banking.
+            </p>
+          </div>
+          <form>
+            <input type="email" placeholder="Type your email" />
+            <button className="primary__button">
+              Discover <ChevronRightIcon />
+            </button>
+          </form>
         </div>
       </div>
     </section>
