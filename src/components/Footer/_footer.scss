@@ -26,6 +26,11 @@ footer {
           display: flex;
           align-items: center;
           justify-content: center;
+          transition: all 0.2s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.8;
+          }
         }
       }
     }
@@ -42,11 +47,18 @@ footer {
             font-size: 16px;
             cursor: auto;
             padding-bottom: 10px;
+            &:hover {
+              color: #252525;
+            }
           }
           li {
             font-size: 14px;
             margin: 20px 0;
             cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+              color: $red;
+            }
           }
         }
       }

@@ -1,4 +1,5 @@
 import { FacebookIcon, LinkedInIcon, LogoIcon, TwitterIcon } from '../Icons';
+import { Link } from 'gatsby';
 
 const Footer = () => {
   return (
@@ -6,9 +7,11 @@ const Footer = () => {
       <div className="container">
         <div className="flex">
           <div className="footer__head">
-            <div className="logo__container">
-              <LogoIcon />
-            </div>
+            <Link to="/">
+              <div className="logo__container">
+                <LogoIcon />
+              </div>
+            </Link>
             <p>The next generation of digital banking</p>
             <div className="socials">
               <div className="social__box">
