@@ -1,9 +1,37 @@
+//importing utils
+import { useStaticQuery, graphql } from 'gatsby';
+import { dataToHero } from '../../utils';
 //importing components
-import { ArrowUpIcon } from "../Icons";
-//@ts-ignore
-import appImg from "../../images/app.jpg";
+import { ArrowUpIcon } from '../Icons';
 
 const Hero = () => {
+  const data = useStaticQuery(graphql`
+    query HeroQuery {
+      allContentfulHero {
+        edges {
+          node {
+            description {
+              description
+            }
+            image {
+              alt
+              icon {
+                file {
+                  url
+                }
+              }
+            }
+            title {
+              raw
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const { description, image } = dataToHero(data);
+
   return (
     <section className="hero__section">
       <div className="container">
@@ -11,11 +39,7 @@ const Hero = () => {
           <h1>
             The Next Era of <span>Digital</span> Banking
           </h1>
-          <p>
-            Take your financial life online. Your Easybank account will be a
-            one-stop-shop for spending, saving, budgeting, investing, and much
-            more. Get started for free.
-          </p>
+          <p>{description}</p>
           <form>
             <input type="email" placeholder="Email address" />
             <button className="primary__button">
@@ -24,7 +48,7 @@ const Hero = () => {
           </form>
         </div>
         <div className="illustration__container">
-          <img src={appImg} alt="app illustration mockup" />
+          <img src={image.url} alt={image.alt} />
         </div>
       </div>
     </section>

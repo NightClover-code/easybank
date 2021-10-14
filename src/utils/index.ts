@@ -1,6 +1,7 @@
 import {
   AdvantageInterface,
   FeatureInterface,
+  HeroInterface,
   TestimonialInterface,
 } from '../interfaces';
 
@@ -52,6 +53,18 @@ export const dataToTestimonials = (data: any): TestimonialInterface[] => {
       })
     )
   );
+};
+
+export const dataToHero = (data: any): HeroInterface => {
+  return data.allContentfulHero.edges.map(
+    ({ node: { description, image } }: any) => ({
+      description: description.description,
+      image: {
+        alt: image.alt,
+        url: image.icon.file.url,
+      },
+    })
+  )[0];
 };
 
 export const sortByDate = (arr: any[]) => {

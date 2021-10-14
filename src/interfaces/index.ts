@@ -20,6 +20,11 @@ export interface TestimonialInterface {
   image: ImageInterface;
 }
 
+export interface HeroInterface {
+  description: string;
+  image: ImageInterface;
+}
+
 export interface ImageInterface {
   alt: string;
   url: string;
