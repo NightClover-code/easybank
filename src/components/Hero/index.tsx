@@ -21,9 +21,6 @@ const Hero = () => {
                 }
               }
             }
-            title {
-              raw
-            }
           }
         }
       }
