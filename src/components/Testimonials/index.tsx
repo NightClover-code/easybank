@@ -47,8 +47,12 @@ const Testimonials = () => {
         ))}
       </div>
       <div className="toggler__container">
-        <ChevronLeftIcon />
-        <ChevronRightIcon />
+        <div className="toggle__circle">
+          <ChevronLeftIcon />
+        </div>
+        <div className="toggle__circle">
+          <ChevronRightIcon />
+        </div>
       </div>
     </section>
   );

@@ -39,8 +39,8 @@ const Advantages: React.FC = () => {
         {advantages.map((advantage, i) => (
           <Card
             advantage={advantage}
-            order={i}
             key={uuidv4()}
+            order={i}
             style={advatangesCardStyle(i)}
           />
         ))}
