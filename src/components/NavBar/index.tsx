@@ -1,6 +1,6 @@
 //importing components
-import { Link } from "gatsby";
-import { ChevronDownIcon, LogoIcon } from "../Icons";
+import { Link } from 'gatsby';
+import { ChevronDownIcon, LogoIcon, MenuIcon } from '../Icons';
 
 const NavBar = () => {
   return (
@@ -21,6 +21,9 @@ const NavBar = () => {
           <li>Sign In</li>
         </ul>
         <button className="primary__button">Free Trial</button>
+      </div>
+      <div className="menu__icon__container">
+        <MenuIcon />
       </div>
     </nav>
   );

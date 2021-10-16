@@ -9,6 +9,9 @@ nav {
   .nav__list {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 950px) {
+      display: none;
+    }
     ul {
       display: flex;
       list-style: none;
@@ -38,6 +41,18 @@ nav {
     button {
       padding: 17px 37px;
       margin-left: 15px;
+    }
+  }
+  .menu__icon__container {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    @media screen and (max-width: 950px) {
+      display: block;
+    }
+    svg {
+      width: 100%;
+      height: 100%;
     }
   }
 }

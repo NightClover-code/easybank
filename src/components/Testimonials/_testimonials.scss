@@ -26,10 +26,10 @@
     margin-top: 60px;
     gap: 20px;
     svg {
-      cursor: pointer;
       transition: all 0.3s ease-in-out;
     }
     .toggle__circle {
+      cursor: pointer;
       border: 1px solid #c4c4c4;
       border-radius: 100%;
       display: flex;
