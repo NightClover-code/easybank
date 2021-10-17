@@ -1,5 +1,6 @@
 //importing hooks
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
+import { useCounter, useResponsiveNum } from '../../hooks';
 //importing types & utils
 import { v4 as uuidv4 } from 'uuid';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -37,15 +38,14 @@ const Testimonials = () => {
 
   const gridRef = useRef<HTMLDivElement | null>(null);
 
-  const [counter, setCounter] = useState(0);
-  const length = testimonials.length;
+  const [counter, setCounter] = useCounter();
 
-  const onNextClickHandler = () => {
-    setCounter(counter === length - 1 ? 0 : counter + 1);
+  const onArrowRightClickHandler = () => {
+    if (counter < 0) setCounter(counter + 1);
   };
 
-  const onPreviousClickHandler = () => {
-    setCounter(counter === 0 ? length - 1 : counter - 1);
+  const onArrowLeftClickHandler = () => {
+    if (counter > -2) setCounter(counter - 1);
   };
 
   return (
@@ -56,16 +56,16 @@ const Testimonials = () => {
         </h1>
         <p>Nothing is more rewarding than hearing from our customers.</p>
       </div>
-      <div className="testimonials__grid">
+      <div className="testimonials__grid" ref={gridRef}>
         {testimonials.map((testimonial, i) => (
           <Card testimonial={testimonial} key={uuidv4()} order={i} />
         ))}
       </div>
       <div className="toggler__container">
-        <div className="toggle__circle" onClick={onPreviousClickHandler}>
+        <div className="toggle__circle" onClick={onArrowLeftClickHandler}>
           <ChevronLeftIcon />
         </div>
-        <div className="toggle__circle" onClick={onNextClickHandler}>
+        <div className="toggle__circle" onClick={onArrowRightClickHandler}>
           <ChevronRightIcon />
         </div>
       </div>

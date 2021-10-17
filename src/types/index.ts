@@ -1,3 +1,3 @@
 import { Dispatch, SetStateAction } from 'react';
 
-export type counterResultType = [number, SetStateAction<Dispatch<number>>];
+export type counterResultType = [number, Dispatch<SetStateAction<number>>];
