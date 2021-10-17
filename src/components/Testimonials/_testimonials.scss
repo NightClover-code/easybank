@@ -24,6 +24,18 @@
     grid-template-columns: repeat(3, 600px);
     gap: 20px;
     transform: translateX(-50%);
+    @media screen and (max-width: 600px) {
+      grid-template-columns: repeat(3, 480px);
+    }
+    @media screen and (max-width: 500px) {
+      grid-template-columns: repeat(3, 380px);
+    }
+    @media screen and (max-width: 400px) {
+      grid-template-columns: repeat(3, 300px);
+    }
+    @media screen and (max-width: 300px) {
+      grid-template-columns: repeat(3, 180px);
+    }
   }
   .toggler__container {
     display: flex;
@@ -31,6 +43,15 @@
     align-items: center;
     justify-content: center;
     margin-top: 430px;
+    @media screen and (max-width: 500px) {
+      margin-top: 450px;
+    }
+    @media screen and (max-width: 400px) {
+      margin-top: 480px;
+    }
+    @media screen and (max-width: 300px) {
+      margin-top: 600px;
+    }
     gap: 20px;
     svg {
       transition: all 0.3s ease-in-out;

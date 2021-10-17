@@ -6,13 +6,36 @@
   align-items: center;
   padding-bottom: 20px;
   border-radius: 12px;
+  overflow: hidden;
   svg.quotes {
     position: absolute;
     left: 85px;
     top: 100px;
+    @media screen and (max-width: 600px) {
+      left: 45px;
+    }
+    @media screen and (max-width: 500px) {
+      left: 25px;
+    }
+    @media screen and (max-width: 400px) {
+      display: none;
+    }
   }
   p {
     max-width: 430px;
+    @media screen and (max-width: 600px) {
+      max-width: 380px;
+    }
+    @media screen and (max-width: 500px) {
+      max-width: 300px;
+    }
+    @media screen and (max-width: 400px) {
+      max-width: 240px;
+      font-size: 17px;
+    }
+    @media screen and (max-width: 300px) {
+      max-width: 140px;
+    }
   }
   .avatar__container {
     width: 64px;
