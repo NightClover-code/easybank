@@ -1,29 +1,36 @@
 .testimonials__section {
+  position: relative;
   margin-top: 120px;
   padding-top: 80px;
-  text-align: center;
-  background-color: $off-white;
   margin-bottom: 100px;
   padding-bottom: 60px;
+  text-align: center;
+  background-color: $off-white;
   h1 span {
     color: $red;
   }
   p {
     padding: 20px 0;
+    @media screen and (max-width: 600px) {
+      max-width: 300px;
+      margin: auto;
+    }
   }
   .testimonials__grid {
+    position: absolute;
+    left: 50%;
+    margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(3, 600px);
-    margin-top: 60px;
     gap: 20px;
-    transform: translateX(-10%);
+    transform: translateX(-50%);
   }
   .toggler__container {
     display: flex;
     margin: auto;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 430px;
     gap: 20px;
     svg {
       transition: all 0.3s ease-in-out;
