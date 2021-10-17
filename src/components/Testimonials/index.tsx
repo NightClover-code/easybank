@@ -1,3 +1,5 @@
+//importing hooks
+import { useEffect, useRef, useState } from 'react';
 //importing types & utils
 import { v4 as uuidv4 } from 'uuid';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -33,6 +35,19 @@ const Testimonials = () => {
 
   const testimonials = dataToTestimonials(data);
 
+  const gridRef = useRef<HTMLDivElement | null>(null);
+
+  const [counter, setCounter] = useState(0);
+  const length = testimonials.length;
+
+  const onNextClickHandler = () => {
+    setCounter(counter === length - 1 ? 0 : counter + 1);
+  };
+
+  const onPreviousClickHandler = () => {
+    setCounter(counter === 0 ? length - 1 : counter - 1);
+  };
+
   return (
     <section className="testimonials__section">
       <div className="testimonials__head">
@@ -47,10 +62,10 @@ const Testimonials = () => {
         ))}
       </div>
       <div className="toggler__container">
-        <div className="toggle__circle">
+        <div className="toggle__circle" onClick={onPreviousClickHandler}>
           <ChevronLeftIcon />
         </div>
-        <div className="toggle__circle">
+        <div className="toggle__circle" onClick={onNextClickHandler}>
           <ChevronRightIcon />
         </div>
       </div>
