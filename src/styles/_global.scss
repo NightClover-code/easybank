@@ -28,6 +28,9 @@ h1 {
   font-weight: 600;
   line-height: 60px;
   color: $black;
+  @media screen and (max-width: 600px) {
+    font-size: 40px;
+  }
 }
 
 p {

@@ -1,7 +1,8 @@
-//importing types & components
+//importing types
 import { CSSProperties } from 'react';
 import { AdvantageInterface } from '../../../interfaces';
 import { isEven } from '../../../utils';
+//importing components
 import Content from '../../Content';
 
 interface CardProps {
