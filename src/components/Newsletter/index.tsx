@@ -9,7 +9,7 @@ const Newsletter = () => {
         <div className="newsletter__subscribe">
           <div className="rectangle__container">
             <Rectangle />
-          </div>
+          </div> 
           <div className="newsletter__head">
             <h2>Subscribe to our newsletter</h2>
             <p>
