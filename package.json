@@ -14,7 +14,9 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@types/aos": "^3.0.4",
     "@types/uuid": "^8.3.1",
+    "aos": "^2.3.4",
     "dotenv": "^10.0.0",
     "gatsby": "^3.13.1",
     "gatsby-plugin-image": "^1.14.1",

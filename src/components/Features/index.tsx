@@ -11,6 +11,7 @@ const Features: React.FC = () => {
       allContentfulFeature {
         edges {
           node {
+            aosDelay
             title
             description {
               description
@@ -35,7 +36,7 @@ const Features: React.FC = () => {
   return (
     <section className="features__section">
       <div className="container">
-        <div className="features__head">
+        <div className="features__head" data-aos="fade-up">
           <h1>
             Why choose <span>Easybank</span>
           </h1>

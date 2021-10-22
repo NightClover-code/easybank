@@ -32,7 +32,7 @@ const Hero = () => {
   return (
     <section className="hero__section">
       <div className="container">
-        <div className="text__content">
+        <div className="text__content" data-aos="fade-right">
           <h1>
             The Next Era of <span>Digital</span> Banking
           </h1>
@@ -44,7 +44,11 @@ const Hero = () => {
             </button>
           </form>
         </div>
-        <div className="illustration__container">
+        <div
+          className="illustration__container"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <img src={image.url} alt={image.alt} />
         </div>
       </div>

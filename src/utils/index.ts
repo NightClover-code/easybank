@@ -8,8 +8,9 @@ import {
 export const dataToFeatures = (data: any): FeatureInterface[] => {
   return sortByDate(
     data.allContentfulFeature.edges.map(
-      ({ node: { title, description, image, createdAt } }: any) => ({
+      ({ node: { title, description, image, createdAt, aosDelay } }: any) => ({
         title,
+        aosDelay,
         iconURL: image.icon.file.url,
         description: description.description,
         image: {

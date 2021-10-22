@@ -3,6 +3,7 @@ export interface FeatureInterface {
   description: string;
   createdAt: string;
   image: ImageInterface;
+  aosDelay?: number;
 }
 
 export interface AdvantageInterface {
