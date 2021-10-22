@@ -11,7 +11,6 @@ const SEO: React.FC<SEOProps> = ({ title, description, keywords }) => {
     <Helmet>
       <html lang="en" />
       <title>{title}</title>
-      <link rel="shortcut icon" type="images/svg" href="favicon.svg" />
 
       <meta name="description" content={description} />
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
