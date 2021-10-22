@@ -1,6 +1,9 @@
-//importing styles & utils
-import '../styles/default.scss';
+//importing utils
+import { seoConfig } from '../utils';
 import AOS from 'aos';
+//importing hooks & styles
+import { useEffect } from 'react';
+import '../styles/default.scss';
 import 'aos/dist/aos.css';
 //importing components
 import Hero from '../components/Hero';
@@ -9,7 +12,7 @@ import MainLayout from '../layouts/MainLayout';
 import Advantages from '../components/Advantages';
 import Testimonials from '../components/Testimonials';
 import Newsletter from '../components/Newsletter';
-import { useEffect } from 'react';
+import SEO from '../components/SEO';
 
 const HomePage = () => {
   useEffect(() => {
@@ -22,6 +25,7 @@ const HomePage = () => {
   return (
     <MainLayout>
       <div className="wrapper">
+        <SEO {...seoConfig} />
         <Hero />
         <Features />
         <Advantages />
