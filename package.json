@@ -26,10 +26,12 @@
     "gatsby-source-contentful": "^5.14.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
     "sass": "^1.42.1",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@types/react-helmet": "^6.1.4",
     "prettier": "2.4.1"
   },
   "repository": {

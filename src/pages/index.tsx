@@ -24,8 +24,8 @@ const HomePage = () => {
 
   return (
     <MainLayout>
+      <SEO {...seoConfig} />
       <div className="wrapper">
-        <SEO {...seoConfig} />
         <Hero />
         <Features />
         <Advantages />
