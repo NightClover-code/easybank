@@ -19,19 +19,26 @@ const Card: React.FC<CardProps> = ({
   const { url, alt } = image;
   const content = { title, description, topic };
 
-  const cardBody = [
-    <div className="img__container">
-      <img src={url} alt={alt} />
-    </div>,
-    <Content {...content} style={style} />,
-  ];
-
   return (
     <div
       className="advantages__card"
       style={order === 0 ? { marginRight: 100 } : {}}
     >
-      {isEven(order) ? cardBody : cardBody.reverse()}
+      {isEven(order) ? (
+        <>
+          <div className="img__container" data-aos="fade-up">
+            <img src={url} alt={alt} />
+          </div>
+          <Content {...content} style={style} dataAos="fade-left" />
+        </>
+      ) : (
+        <>
+          <Content {...content} style={style} dataAos="fade-right" />
+          <div className="img__container" data-aos="fade-up">
+            <img src={url} alt={alt} />
+          </div>
+        </>
+      )}
     </div>
   );
 };

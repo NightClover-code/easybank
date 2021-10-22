@@ -54,7 +54,9 @@ const Features: React.FC = () => {
             />
           ))}
         </div>
-        <button className="primary__button">Become a partner</button>
+        <button className="primary__button" data-aos="fade-up">
+          Become a partner
+        </button>
       </div>
     </section>
   );
