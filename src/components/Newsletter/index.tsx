@@ -3,13 +3,13 @@ import { ChevronRightIcon, Rectangle } from '../Icons';
 
 const Newsletter = () => {
   return (
-    <section className="newsletter__section">
+    <section className="newsletter__section" data-aos="fade-up">
       <div className="container">
         <div className="separator"></div>
         <div className="newsletter__subscribe">
           <div className="rectangle__container">
             <Rectangle />
-          </div> 
+          </div>
           <div className="newsletter__head">
             <h2>Subscribe to our newsletter</h2>
             <p>

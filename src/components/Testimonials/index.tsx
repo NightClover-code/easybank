@@ -1,6 +1,6 @@
 //importing hooks
-import { useEffect, useRef } from 'react';
-import { useCounter, useResponsiveNum } from '../../hooks';
+import { useRef } from 'react';
+import { useCounter } from '../../hooks';
 //importing types & utils
 import { v4 as uuidv4 } from 'uuid';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -50,7 +50,7 @@ const Testimonials = () => {
 
   return (
     <section className="testimonials__section">
-      <div className="testimonials__head">
+      <div className="testimonials__head" data-aos="fade-up">
         <h1>
           What our <span>happy client</span> say
         </h1>
@@ -61,7 +61,7 @@ const Testimonials = () => {
           <Card testimonial={testimonial} key={uuidv4()} order={i} />
         ))}
       </div>
-      <div className="toggler__container">
+      <div className="toggler__container" data-aos="fade-up">
         <div className="toggle__circle" onClick={onArrowLeftClickHandler}>
           <ChevronLeftIcon />
         </div>
