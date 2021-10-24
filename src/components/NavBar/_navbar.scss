@@ -1,14 +1,17 @@
-nav {
+@mixin flex {
   display: flex;
   align-items: center;
-  font-weight: 500;
+}
+
+nav {
+  @include flex();
   justify-content: space-between;
+  font-weight: 500;
   .logo__container {
     cursor: pointer;
   }
   .nav__list {
-    display: flex;
-    align-items: center;
+    @include flex();
     @media screen and (max-width: 950px) {
       display: none;
     }
@@ -24,8 +27,7 @@ nav {
         }
       }
       .resources {
-        display: flex;
-        align-items: center;
+        @include flex();
         justify-content: center;
         svg {
           width: 15px;

@@ -1,3 +1,9 @@
+@mixin flex_between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .newsletter__section {
   margin-bottom: 180px;
   @media screen and (max-width: 950px) {
@@ -6,9 +12,7 @@
   .newsletter__subscribe {
     position: relative;
     padding: 0 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex_between();
     overflow: hidden;
     margin-top: 70px;
     min-height: 240px;
@@ -17,7 +21,7 @@
     background-color: rgba(23, 40, 142, 0.8);
     @media screen and (max-width: 950px) {
       flex-flow: column nowrap;
-      padding: 50px 40px;
+      padding: 40px;
       .rectangle__container {
         display: none;
       }
@@ -84,7 +88,7 @@
         height: 120px;
         button {
           width: 100% !important;
-          margin-top: 10px;
+          margin-top: 15px;
         }
       }
       input {

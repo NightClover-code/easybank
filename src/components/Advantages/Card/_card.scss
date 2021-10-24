@@ -1,7 +1,11 @@
-.advantages__card {
+@mixin flex_center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.advantages__card {
+  @include flex_center();
   margin-top: 80px;
   gap: 0 80px;
   @media screen and (max-width: 1300px) {

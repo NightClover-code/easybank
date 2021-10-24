@@ -5,10 +5,8 @@
     padding: 100px 0;
     .features__head {
       text-align: center;
-      h1 {
-        span {
-          color: $green;
-        }
+      h1 span {
+        color: $green;
       }
       p {
         max-width: 660px;
@@ -23,9 +21,8 @@
       gap: 30px;
     }
     button {
-      margin: auto;
+      margin: 60px auto 0 auto;
       padding: 17px 25px;
-      margin-top: 60px;
     }
   }
 }

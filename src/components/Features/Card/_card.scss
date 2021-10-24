@@ -1,3 +1,9 @@
+@mixin flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .features__card {
   border-radius: 15px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -10,9 +16,7 @@
     background-color: #ffc1c1;
     width: 86px;
     height: 86px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex_center();
     margin: auto;
   }
   h2 {

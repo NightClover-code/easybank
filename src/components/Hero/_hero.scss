@@ -1,7 +1,11 @@
-.hero__section .container {
-  overflow: visible;
+@mixin flex {
   display: flex;
   align-items: center;
+}
+
+.hero__section .container {
+  overflow: visible;
+  @include flex();
   justify-content: space-between;
   margin-top: 40px;
   @media screen and (max-width: 1300px) {
@@ -44,8 +48,7 @@
       }
     }
     form {
-      display: flex;
-      align-items: center;
+      @include flex();
       margin-top: 40px;
       @media screen and (max-width: 800px) {
         flex-flow: column nowrap;

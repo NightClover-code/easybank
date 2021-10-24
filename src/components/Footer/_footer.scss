@@ -1,3 +1,15 @@
+@mixin flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex_between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 footer {
   background-color: #f8f8f8;
   padding-top: 60px;
@@ -37,9 +49,7 @@ footer {
           height: 28px;
           border-radius: 3px;
           background-color: #252525;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @include flex_center();
           transition: all 0.2s ease-in-out;
           cursor: pointer;
           &:hover {
@@ -100,9 +110,7 @@ footer {
     }
   }
   .footer__bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex_between();
     margin: 20px 0;
 
     p,
