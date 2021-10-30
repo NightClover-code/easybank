@@ -1,15 +1,11 @@
 //importing components
-import { Link } from 'gatsby';
-import { ChevronDownIcon, LogoIcon, MenuIcon } from '../Icons';
+import { ChevronDownIcon, MenuIcon } from '../Icons';
+import Logo from '../Logo';
 
 const NavBar = () => {
   return (
     <nav>
-      <div className="logo__container">
-        <Link to="/">
-          <LogoIcon />
-        </Link>
-      </div>
+      <Logo />
       <div className="nav__list">
         <ul>
           <li>Prices</li>

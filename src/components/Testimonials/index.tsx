@@ -1,6 +1,5 @@
 //importing hooks
-import { useRef } from 'react';
-import { useCounter } from '../../hooks';
+import { useRef, useState } from 'react';
 //importing types & utils
 import { v4 as uuidv4 } from 'uuid';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -38,7 +37,7 @@ const Testimonials = () => {
 
   const gridRef = useRef<HTMLDivElement | null>(null);
 
-  const [counter, setCounter] = useCounter();
+  const [counter, setCounter] = useState(0);
 
   const onArrowRightClickHandler = () => {
     if (counter < 0) setCounter(counter + 1);
@@ -52,7 +51,7 @@ const Testimonials = () => {
     <section className="testimonials__section">
       <div className="testimonials__head" data-aos="fade-up">
         <h1>
-          What our <span>happy client</span> say
+          What our <span>happy clients</span> say
         </h1>
         <p>Nothing is more rewarding than hearing from our customers.</p>
       </div>
