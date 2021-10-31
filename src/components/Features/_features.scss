@@ -16,9 +16,12 @@
     }
     .features__grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(3, 400px);
       margin-top: 60px;
       gap: 30px;
+      @media screen and (max-width: 1600px) {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      }
     }
     button {
       margin: 60px auto 0 auto;
