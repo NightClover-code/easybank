@@ -11,12 +11,7 @@ nav {
     cursor: pointer;
   }
   .nav__list {
-    @include flex();
-    @media screen and (max-width: 950px) {
-      display: none;
-    }
     ul {
-      display: flex;
       list-style: none;
       li {
         padding: 0 17px;
@@ -45,6 +40,75 @@ nav {
       margin-left: 15px;
     }
   }
+  .desktop__nav .nav__list {
+    @include flex();
+    @media screen and (max-width: 950px) {
+      display: none;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      .resources {
+        justify-content: center;
+      }
+    }
+  }
+
+  .mobile__nav .nav__list {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 120px;
+    width: 80%;
+    ul {
+      text-align: center;
+      li {
+        display: block;
+        font-size: 18px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 30px 0;
+        border-bottom: 1px solid rgba(95, 104, 141, 0.5);
+        font-weight: 600;
+        &:hover {
+          color: $red;
+          opacity: 1;
+          svg path {
+            fill: $red;
+          }
+        }
+      }
+      .prices {
+        border-top: 1px solid rgba(95, 104, 141, 0.5);
+      }
+    }
+    button {
+      width: 100%;
+      margin: 35px 0 0 0;
+      border-radius: 8px;
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      box-shadow: none;
+      text-transform: uppercase;
+      font-size: 18px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      &:hover {
+        background-color: #fff;
+        color: $red;
+        opacity: 1;
+      }
+    }
+    svg {
+      width: 20px !important;
+      path {
+        fill: white;
+      }
+    }
+  }
+
   .menu__icon__container {
     display: none;
     cursor: pointer;

@@ -1,7 +1,8 @@
-//importing utils
-import { useStaticQuery, graphql } from 'gatsby';
+//importing hooks & context
 import { useContext } from 'react';
 import { NavContext } from '../../context';
+//importing utils
+import { useStaticQuery, graphql } from 'gatsby';
 import { dataToHero } from '../../utils';
 //importing components
 import { ArrowUpIcon } from '../Icons';
