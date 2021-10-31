@@ -41,7 +41,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(37, 43, 70, 0.95);
+  background-color: rgba(50, 56, 81, 0.7);
+  z-index: 100;
+}
+
+.disable__scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 :root {

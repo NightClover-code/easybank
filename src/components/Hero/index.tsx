@@ -1,5 +1,7 @@
 //importing utils
 import { useStaticQuery, graphql } from 'gatsby';
+import { useContext } from 'react';
+import { NavContext } from '../../context';
 import { dataToHero } from '../../utils';
 //importing components
 import { ArrowUpIcon } from '../Icons';
@@ -28,10 +30,14 @@ const Hero = () => {
   `);
 
   const { description, image } = dataToHero(data);
+  const { isNavOpen } = useContext(NavContext);
 
   return (
     <section className="hero__section">
-      <div className="container">
+      <div
+        className="container"
+        style={isNavOpen ? { marginTop: '200px' } : {}}
+      >
         <div className="text__content" data-aos="fade-right">
           <h1>
             The Next Era of <span>Digital</span> Banking
