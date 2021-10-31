@@ -1,5 +1,6 @@
 //importing hooks
-import { useRef, useState } from 'react';
+import { useRef, useEffect } from 'react';
+import { useCounter, useWindowWidth } from '../../hooks';
 //importing types & utils
 import { v4 as uuidv4 } from 'uuid';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -37,15 +38,25 @@ const Testimonials = () => {
 
   const gridRef = useRef<HTMLDivElement | null>(null);
 
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useCounter();
+  const width = useWindowWidth();
 
   const onArrowRightClickHandler = () => {
-    if (counter < 0) setCounter(counter + 1);
+    if (counter < 2) setCounter(counter + 1);
   };
 
   const onArrowLeftClickHandler = () => {
-    if (counter > -2) setCounter(counter - 1);
+    if (counter > 0) setCounter(counter - 1);
   };
+
+  useEffect(() => {
+    if (width < 600) {
+      gridRef.current.style.transform =
+        'translateX(' + -(gridRef.current.clientWidth / 3) * counter + 'px)';
+    } else {
+      gridRef.current.style.transform = 'translateX(-50%)';
+    }
+  }, [counter, width]);
 
   return (
     <section className="testimonials__section">
