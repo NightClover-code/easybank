@@ -1,6 +1,7 @@
 //importing utils
 import { seoConfig } from '../utils';
 import AOS from 'aos';
+import { NavProvider } from '../context';
 //importing hooks & styles
 import { useEffect } from 'react';
 import '../styles/default.scss';
@@ -23,16 +24,18 @@ const HomePage = () => {
   }, []);
 
   return (
-    <MainLayout>
-      <SEO {...seoConfig} />
-      <div className="wrapper">
-        <Hero />
-        <Features />
-        <Advantages />
-        <Testimonials />
-        <Newsletter />
-      </div>
-    </MainLayout>
+    <NavProvider>
+      <MainLayout>
+        <SEO {...seoConfig} />
+        <div className="wrapper">
+          <Hero />
+          <Features />
+          <Advantages />
+          <Testimonials />
+          <Newsletter />
+        </div>
+      </MainLayout>
+    </NavProvider>
   );
 };
 
