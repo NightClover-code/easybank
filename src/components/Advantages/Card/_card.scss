@@ -17,6 +17,7 @@
     gap: 80px 0;
   }
   .img__container {
+    animation: MoveUpDown 3s linear infinite;
     img {
       width: 100%;
       height: 100%;

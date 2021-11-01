@@ -99,6 +99,7 @@
     }
   }
   .illustration__container {
+    animation: MoveUpDown 2s linear infinite;
     img {
       width: 100%;
       height: 100%;

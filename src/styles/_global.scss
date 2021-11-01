@@ -46,3 +46,13 @@ p {
   height: 0px;
   border: 0.5px solid rgba(196, 196, 196, 0.2);
 }
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
