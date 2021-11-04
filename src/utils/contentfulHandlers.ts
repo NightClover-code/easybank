@@ -6,6 +6,8 @@ import {
 } from '../interfaces';
 import { sortByDate } from '.';
 
+/* custom functions to turn the graphql query result into usable data*/
+
 export const dataToFeatures = (data: any): FeatureInterface[] => {
   return sortByDate(
     data.allContentfulFeature.edges.map(
