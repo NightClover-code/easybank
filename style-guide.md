@@ -16,8 +16,6 @@ $green: #1DC7AC;
 $dark-pink: #FCC5D3;
 $off-white: #FBFCFF;
 
-## Typography
-
 ### Body Copy
 
 - Font size: 18px
