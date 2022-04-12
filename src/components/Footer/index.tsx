@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
         <div className="separator"></div>
         <div className="footer__bottom">
-          <div className="copyright">&copy; Copyright 2021, Easybank Inc.</div>
+          <div className="copyright">&copy; Copyright 2022, Easybank Inc.</div>
           <p>Created by Achraf Elmouhib</p>
         </div>
       </div>
