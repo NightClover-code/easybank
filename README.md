@@ -15,8 +15,7 @@ After trying Gastby, I must say that it was pretty satisfying to work with, alth
 
 ## Built With ✨
 
-- graphql
-- SCSS
+- [GraphQL](https://graphql.com) - Query language
 - Contentful - Headless CMS
 - [React](https://reactjs.org/) - JS library
 - [Gatsby.js](https://www.gatsbyjs.com/) - React framework
