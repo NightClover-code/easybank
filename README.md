@@ -22,4 +22,7 @@ After trying Gastby, I must say that it was pretty satisfying to work with, alth
 - Typescript
 - AOS - animation library
 
+## Author
+- [@achrafdev](https://achrafdev.com)
+
 **Thanks for sharing** 🚀
